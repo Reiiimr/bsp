@@ -1,0 +1,206 @@
+
+I will update the existing HTML file to add a footer section at the bottom. The footer will contain:
+- Copyright claim for 2025
+- Links or text for Terms and Conditions
+
+I'll ensure the footer styling is clean, subtle, consistent with the page style, and sticks to the bottom with some padding and border top to separate from content. This will keep the page looking modern and organized.
+
+I will create the complete updated file HTML content including the new footer.
+
+
+`psychology_research_papers.html`
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>BSc Psychology Research Papers</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #202124;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  header {
+    background-color: #1a73e8;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    flex: 1;
+    width: 100%;
+  }
+  #search-container {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  #search-input {
+    width: 100%;
+    max-width: 480px;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    box-shadow: inset 0 1px 3px rgb(0 0 0 / 0.1);
+    transition: border-color 0.3s ease;
+  }
+  #search-input:focus {
+    outline: none;
+    border-color: #1a73e8;
+  }
+  .paper {
+    background: white;
+    border-radius: 8px;
+    padding: 1.2rem 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  .paper:hover {
+    box-shadow: 0 4px 8px rgb(0 0 0 / 0.15);
+  }
+  .paper-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1a0dab;
+    margin: 0 0 0.3rem 0;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .paper-title:hover {
+    text-decoration: underline;
+  }
+  .paper-authors, .paper-year {
+    font-size: 0.9rem;
+    color: #5f6368;
+  }
+  .paper-authors {
+    margin-bottom: 0.25rem;
+  }
+  .paper-abstract {
+    margin-top: 0.7rem;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #3c4043;
+  }
+  footer {
+    background-color: #f1f3f4;
+    border-top: 1px solid #dadce0;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #5f6368;
+  }
+  footer a {
+    color: #1a73e8;
+    text-decoration: none;
+    margin: 0 8px;
+  }
+  footer a:hover {
+    text-decoration: underline;
+  }
+  @media (max-width: 600px) {
+    main {
+      margin: 1rem;
+    }
+    #search-input {
+      max-width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  Bachelor of Science in Psychology Research Papers
+</header>
+<main>
+  <div id="search-container">
+    <input type="text" id="search-input" placeholder="Search papers by keywords, authors, or titles..." />
+  </div>
+  <div id="papers-list">
+    <article class="paper">
+      <a href="https://doi.org/10.1037/0003-066X.59.1.29" target="_blank" rel="noopener" class="paper-title">Cognitive restructuring and therapy for anxiety disorders</a>
+      <div class="paper-authors">Beck, A.T., & Clark, D.A.</div>
+      <div class="paper-year">1996</div>
+      <p class="paper-abstract">
+        This paper reviews cognitive therapy methods and their efficacy in treatment of anxiety disorders, focusing on restructuring maladaptive thought patterns.
+      </p>
+    </article>
+
+    <article class="paper">
+      <a href="https://doi.org/10.1016/S0005-7967(99)00033-5" target="_blank" rel="noopener" class="paper-title">Attachment theory and adult romantic relationships</a>
+      <div class="paper-authors">Hazan, C., & Shaver, P.R.</div>
+      <div class="paper-year">1987</div>
+      <p class="paper-abstract">
+        An exploration of how early attachment experiences influence patterns of adult romantic relationships and intimacy behaviors.
+      </p>
+    </article>
+
+    <article class="paper">
+      <a href="https://doi.org/10.1037/0033-2909.126.6.898" target="_blank" rel="noopener" class="paper-title">The social brain hypothesis</a>
+      <div class="paper-authors">Dunbar, R.I.M.</div>
+      <div class="paper-year">2000</div>
+      <p class="paper-abstract">
+        Proposes that the evolution of the human brain was driven by the need to manage complex social groups and relationships.
+      </p>
+    </article>
+
+    <article class="paper">
+      <a href="https://doi.org/10.1126/science.274.5293.2070" target="_blank" rel="noopener" class="paper-title">Mirror neurons and empathy</a>
+      <div class="paper-authors">Iacoboni, M., et al.</div>
+      <div class="paper-year">1999</div>
+      <p class="paper-abstract">
+        Investigates the role of mirror neurons in understanding others' actions and empathy development.
+      </p>
+    </article>
+
+    <article class="paper">
+      <a href="https://doi.org/10.1016/j.cpr.2008.09.004" target="_blank" rel="noopener" class="paper-title">The role of executive functions in psychological disorders</a>
+      <div class="paper-authors">Snyder, H.R.</div>
+      <div class="paper-year">2013</div>
+      <p class="paper-abstract">
+        Discusses how deficits in executive functions contribute to the development and maintenance of common psychological disorders.
+      </p>
+    </article>
+  </div>
+</main>
+<footer>
+  &copy; 2025 Bachelor of Science in Psychology. All rights reserved.
+  <a href="#" title="Terms and Conditions">Terms and Conditions</a>
+</footer>
+<script>
+  const searchInput = document.getElementById('search-input');
+  const papersList = document.getElementById('papers-list');
+  const papers = Array.from(papersList.getElementsByClassName('paper'));
+
+  searchInput.addEventListener('input', () => {
+    const query = searchInput.value.toLowerCase();
+    papers.forEach(paper => {
+      const title = paper.querySelector('.paper-title').textContent.toLowerCase();
+      const authors = paper.querySelector('.paper-authors').textContent.toLowerCase();
+      const abstract = paper.querySelector('.paper-abstract').textContent.toLowerCase();
+      if (title.includes(query) || authors.includes(query) || abstract.includes(query)) {
+        paper.style.display = '';
+      } else {
+        paper.style.display = 'none';
+      }
+    });
+  });
+</script>
+</body>
+</html>
+
+```
